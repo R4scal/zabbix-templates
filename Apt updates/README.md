@@ -1,4 +1,4 @@
-# Template for MikroTik Routers and Wireless
+# Template for Apt updates monitoring
 
 ##  Install
 
@@ -8,4 +8,4 @@
 ## Monitoring
 
 - [x] Security updates
-- [x] Need for reboot for complete install updates
+- [x] Need for reboot to complete install updates
