@@ -10,6 +10,7 @@ The objective is try to use native zabbix-agent items and SNMP when possible.
 
 - [x] Create a template for MikroTik Routers and Wireless
 - [x] APT Updates (with need restart warning)
+- [x] Nvidia GPU
 - [ ] Create a template for monitoring nginx
 - [ ] Create a template for monitoring php-fpm
 - [ ] Create a template for monitoring ZFS
