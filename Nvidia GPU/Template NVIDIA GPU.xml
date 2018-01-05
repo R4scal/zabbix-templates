@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2017-12-24T19:04:46Z</date>
+    <date>2018-01-05T12:20:56Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>NVIDIA GPU</template>
-            <name>NVIDIA GPU</name>
+            <template>Template NVIDIA GPU</template>
+            <name>Template NVIDIA GPU</name>
             <description/>
             <groups>
                 <group>
@@ -22,7 +22,7 @@
                     <name>gpu</name>
                 </application>
                 <application>
-                    <name>gpu-raw</name>
+                    <name>raw</name>
                 </application>
             </applications>
             <items/>
@@ -91,7 +91,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>gpu-raw</name>
+                                    <name>raw</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -131,11 +131,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -150,7 +146,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -185,11 +185,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -208,7 +204,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -243,11 +243,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -266,7 +262,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -283,7 +283,7 @@
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
-                            <units>C</units>
+                            <units>°C</units>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -301,11 +301,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -320,7 +316,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -355,11 +355,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -378,7 +374,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -413,11 +413,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -436,7 +432,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -471,11 +471,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -494,7 +490,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -529,11 +529,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -552,7 +548,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -587,16 +587,16 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
@@ -629,11 +629,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -648,7 +644,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -683,11 +683,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -702,7 +698,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -737,11 +737,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -751,7 +747,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -786,11 +786,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -800,7 +796,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -835,11 +835,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -849,7 +845,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -884,11 +884,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -898,7 +894,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -933,11 +933,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -947,7 +943,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -982,11 +982,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -996,7 +992,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -1031,11 +1031,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -1050,7 +1046,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -1085,11 +1085,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -1104,7 +1100,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -1139,11 +1139,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -1158,7 +1154,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -1193,11 +1193,7 @@
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>gpu</name>
-                                </application>
-                            </applications>
+                            <applications/>
                             <valuemap/>
                             <logtimefmt/>
                             <preprocessing>
@@ -1212,7 +1208,11 @@
                                 </step>
                             </preprocessing>
                             <jmx_endpoint/>
-                            <application_prototypes/>
+                            <application_prototypes>
+                                <application_prototype>
+                                    <name>gpu-{#GPUID}</name>
+                                </application_prototype>
+                            </application_prototypes>
                             <master_item_prototype>
                                 <key>nvidia.data[{#GPUID}]</key>
                             </master_item_prototype>
@@ -1220,9 +1220,9 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>({TRIGGER.VALUE}=0 and {NVIDIA GPU:nvidia.gpu[{#GPUID},gpu_temp].min(5m)}&gt;81)&#13;
+                            <expression>({TRIGGER.VALUE}=0 and {Template NVIDIA GPU:nvidia.gpu[{#GPUID},gpu_temp].min(5m)}&gt;81)&#13;
 or&#13;
-({TRIGGER.VALUE}=1 and {NVIDIA GPU:nvidia.gpu[{#GPUID},gpu_temp].max(5m)}&gt;80)</expression>
+({TRIGGER.VALUE}=1 and {Template NVIDIA GPU:nvidia.gpu[{#GPUID},gpu_temp].max(5m)}&gt;80)</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>GPU {#GPUID} Temperature Overheat</name>
@@ -1238,15 +1238,13 @@ or&#13;
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{NVIDIA GPU:nvidia.gpu[{#GPUID},throttle_applications_clocks_setting].iregexp(Not Active)}=0&#13;
+                            <expression>{Template NVIDIA GPU:nvidia.gpu[{#GPUID},throttle_applications_clocks_setting].iregexp(Not Active,#3)}=0&#13;
 or&#13;
-{NVIDIA GPU:nvidia.gpu[{#GPUID},throttle_sw_thermal_slowdown].iregexp(Not Active)}=0&#13;
+{Template NVIDIA GPU:nvidia.gpu[{#GPUID},throttle_sw_thermal_slowdown].iregexp(Not Active,#3)}=0&#13;
 or&#13;
-{NVIDIA GPU:nvidia.gpu[{#GPUID},throttle_sw_power_cap].iregexp(Not Active)}=0&#13;
+{Template NVIDIA GPU:nvidia.gpu[{#GPUID},throttle_sync_boost].iregexp(Not Active,#3)}=0&#13;
 or&#13;
-{NVIDIA GPU:nvidia.gpu[{#GPUID},throttle_sync_boost].iregexp(Not Active)}=0&#13;
-or&#13;
-{NVIDIA GPU:nvidia.gpu[{#GPUID},throttle_hw_slowdown].iregexp(Not Active)}=0</expression>
+{Template NVIDIA GPU:nvidia.gpu[{#GPUID},throttle_hw_slowdown].iregexp(Not Active,#3)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>GPU {#GPUID} throttling active</name>

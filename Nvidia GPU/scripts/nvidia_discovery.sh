@@ -3,8 +3,9 @@
 echo "{"
 echo '    "data":['
 FIRST=1
- 
-while read line; do
+
+for line in $(nvidia-smi --list-gpus | awk -F ':' '{gsub("GPU ", "");print $1}')
+do
     if [ $FIRST != 0 ]; then
         FIRST=0
     else
@@ -12,8 +13,10 @@ while read line; do
         echo "        $ELEMENT"
     fi
     GPU=$line
-done <<< $(nvidia-smi --list-gpus | awk -F ':' '{gsub("GPU ", "");print $1}')
+done
+
 ELEMENT="{ \"{#GPUID}\": $GPU }"
 echo "        $ELEMENT"
 echo '    ]'
 echo "}"
+
