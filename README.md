@@ -1,13 +1,13 @@
 # zabbix-templates
---------------
+
 A collection of templates and scripts for Zabbix
 
 ##  Objective
---------------
+
 The objective is try to use native zabbix-agent items and SNMP when possible.
 
 ## TODO
---------------
+
 - [x] Create a template for MikroTik Routers and Wireless
 - [x] APT Updates (with need restart warning)
 - [x] Claymore's Dual Ethereum GPU Miner
@@ -18,7 +18,7 @@ The objective is try to use native zabbix-agent items and SNMP when possible.
 - [ ] Create a template for monitoring ZFS
 
 ## Donations
---------------
+
 If you find this useful and/or you would like to see additional extensions, feel free to donate some crypto:
 
 - BTC: 34avFpVSPcFcfm3vwYgRBrVw9e9A3zu5t3
@@ -26,7 +26,7 @@ If you find this useful and/or you would like to see additional extensions, feel
 - SC: 3098a29a6a810ae762044420bc402323c2d82a0b2f66ada9f4521e1c8561f459ea22548a9eaf
 
 ## LICENSE
---------------
+
 The MIT License (MIT)
 
 Copyright (c) 2017 Pavel Boev aka Rascal
